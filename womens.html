@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Fashion - StyleHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>StyleHub</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="mens.html" class="nav-link">Men's</a></li>
+                <li><a href="womens.html" class="nav-link active">Women's</a></li>
+                <li><a href="sale.html" class="nav-link">Sale</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="nav-icon cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Women's Fashion</h1>
+            <p>Discover the latest trends in women's clothing and accessories</p>
+        </div>
+    </section>
+
+    <!-- Filters and Products -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <h3>Filters</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <label><input type="checkbox" checked> Dresses</label>
+                        <label><input type="checkbox"> Tops</label>
+                        <label><input type="checkbox"> Bottoms</label>
+                        <label><input type="checkbox"> Outerwear</label>
+                        <label><input type="checkbox"> Accessories</label>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Size</h4>
+                        <label><input type="checkbox"> XS</label>
+                        <label><input type="checkbox" checked> S</label>
+                        <label><input type="checkbox" checked> M</label>
+                        <label><input type="checkbox" checked> L</label>
+                        <label><input type="checkbox"> XL</label>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <label><input type="checkbox"> Under $50</label>
+                        <label><input type="checkbox" checked> $50 - $100</label>
+                        <label><input type="checkbox" checked> $100 - $200</label>
+                        <label><input type="checkbox"> Over $200</label>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Color</h4>
+                        <label><input type="checkbox"> Black</label>
+                        <label><input type="checkbox" checked> White</label>
+                        <label><input type="checkbox"> Pink</label>
+                        <label><input type="checkbox"> Blue</label>
+                        <label><input type="checkbox"> Red</label>
+                    </div>
+                    
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Apply Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-grid">
+                    <div class="products-header">
+                        <h2>Women's Clothing</h2>
+                        <div class="products-controls">
+                            <select class="sort-select">
+                                <option>Sort by: Featured</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Newest First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4c3e5b5a?w=300&h=400&fit=crop" alt="Women's Summer Dress">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                                <div class="product-badge">Sale</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Summer Dress</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$79.99</span>
+                                    <span class="original-price">$99.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=300&h=400&fit=crop" alt="Women's Elegant Blouse">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Elegant Blouse</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$59.99</span>
+                                    <span class="original-price">$79.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=300&h=400&fit=crop" alt="Women's Casual Top">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                                <div class="product-badge">New</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Casual Top</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$45.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4c3e5b5a?w=300&h=400&fit=crop" alt="Women's Evening Dress">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Evening Dress</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$129.99</span>
+                                    <span class="original-price">$159.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=300&h=400&fit=crop" alt="Women's Cardigan">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Knit Cardigan</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$89.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=300&h=400&fit=crop" alt="Women's Jeans">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                                <div class="product-badge">Sale</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's High-Waist Jeans</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$69.99</span>
+                                    <span class="original-price">$89.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4c3e5b5a?w=300&h=400&fit=crop" alt="Women's Skirt">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's A-Line Skirt</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$55.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=300&h=400&fit=crop" alt="Women's Jacket">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                                <div class="product-badge">New</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Denim Jacket</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$95.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=300&h=400&fit=crop" alt="Women's Sweater">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Cozy Sweater</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$75.99</span>
+                                    <span class="original-price">$95.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 10 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4c3e5b5a?w=300&h=400&fit=crop" alt="Women's Romper">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Summer Romper</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$65.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 11 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=300&h=400&fit=crop" alt="Women's Blazer">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                                <div class="product-badge">Sale</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Professional Blazer</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$149.99</span>
+                                    <span class="original-price">$189.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 12 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=300&h=400&fit=crop" alt="Women's Tank Top">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Women's Casual Tank Top</h3>
+                                <p class="product-category">Women's Clothing</p>
+                                <div class="product-price">
+                                    <span class="current-price">$25.99</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest women's fashion trends and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StyleHub</h3>
+                    <p>Your destination for trendy fashion and style.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="mens.html">Men's Clothing</a></li>
+                        <li><a href="womens.html">Women's Clothing</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@stylehub.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Fashion St, Style City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
